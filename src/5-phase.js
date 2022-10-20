@@ -1,4 +1,4 @@
-import {utilB} from "../utils/utils";
+import {utilA, utilB} from "../utils/utils";
 
 export const testA = async (promise, cb, fallbackValue) => {
     const data = await promise
@@ -17,3 +17,17 @@ export const testB = ({ method }, [, cb], value) => {
 
     return promise;
 };
+
+// extra
+export const testC = (prAmise, delay, arr) => {
+    const cb = (value) => prAmise.than(utilA(value))
+
+    let resolve
+    const promise = new Promise(res => resolve = res)
+
+    const {method} = arr[Math.round(Math.random() * 100)]
+
+    setTimeout(() => method().catch(cb).finally(resolve), delay)
+
+    return promise
+}
