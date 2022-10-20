@@ -1,0 +1,22 @@
+{
+  "name": "unit-tests",
+  "version": "1.0.0",
+  "description": "unit-tests practices",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eLeontev/unit-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eLeontev/unit-tests/issues"
+  },
+  "homepage": "https://github.com/eLeontev/unit-tests#readme",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}
