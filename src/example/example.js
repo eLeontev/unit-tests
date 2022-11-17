@@ -1,16 +1,22 @@
 // https://github.com/facebook/react/blob/main/packages/react-dom/src/server/ReactDOMFizzStaticBrowser.js
 
-import {
-  createRequest,
+const {createRequest,
   startWork,
   startFlowing,
   abort,
-} from './utils';
-
-import {
   createResponseState,
-  createRootFormatContext,
-} from './utils';
+  createRootFormatContext} = require('./utils')
+// import {
+//   createRequest,
+//   startWork,
+//   startFlowing,
+//   abort,
+// } from './utils';
+//
+// import {
+//   createResponseState,
+//   createRootFormatContext,
+// } from './utils';
 
 function prerender(
   children,
